@@ -4,6 +4,7 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +15,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
+
 <!-- Custom Theme files -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> 
@@ -146,11 +148,11 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 		<div class="container"> 
 			<h3 class="w3ls-title w3ls-title1">Create your account</h3>  
 			<div class="login-body">
-				<form action="#" method="post">
+				<form action="php/register.php" method="get">
 					<input type="text" class="user" name="name" placeholder="Enter your Name" required="">
 					<input type="text" class="user" name="email" placeholder="Enter your email" required="">
 					<input type="password" name="password" class="lock" placeholder="Password" required="">
-					<input type="submit" value="Sign Up ">
+					<input type="submit" value="Sign Up " name="submit">
 					<div class="forgot-grid">
 						<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Remember me</label>
 						<div class="forgot">
@@ -163,6 +165,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 			<h6>Already have an account? <a href="login.html">Login Now »</a> </h6>  
 		</div>
 	</div>
+	
 	<!-- //sign up-page --> 
 	
 	<!-- cart-js -->
