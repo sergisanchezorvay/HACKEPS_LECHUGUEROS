@@ -13,8 +13,9 @@ if($conn === false){
 if(isset($_GET['submit']))
 { 
     $email = strip_tags($_GET['email']);
+    $username = strip_tags($_GET['name']);
     $password = strip_tags($_GET['password']);
-    $sql = "INSERT INTO users (email, user_password) VALUES ('$email','$password')";
+    $sql = "INSERT INTO usuaris (email, user_password, u_name) VALUES ('$email','$password','$username')";
       if (mysqli_query($conn, $sql)) {
             header('Location: /HACKEPS_LECHUGUEROS/web/index.html');  
             console_log("Header");
