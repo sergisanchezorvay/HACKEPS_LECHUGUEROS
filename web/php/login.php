@@ -18,7 +18,7 @@ if (isset($_GET['login'])) {
  $password = $_GET['password'];
 
 
- $sql = "SELECT * FROM users WHERE email='$username' and user_password ='$password'";
+ $sql = "SELECT * FROM usuaris WHERE email='$username' and user_password ='$password'";
  
  if (!$consulta = $conn->query($sql)) {
      echo '<p class="error">An Error occurred</p>';
